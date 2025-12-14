@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Digital Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MyDigitalStore</div>
+    <nav class="nav">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="cart-icon" id="cartToggle">
+      🛒 <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Instant Digital Delivery</h1>
+        <p>Buy legal digital products: ebooks, courses, software keys, and more.</p>
+        <a href="#products" class="btn-primary">Browse Products</a>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <h2>Our Products</h2>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart">✕</button>
+      </div>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          Total: <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn-primary" id="checkoutBtn">Checkout</button>
+      </div>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
+    <section id="about" class="info-section">
+      <h2>About</h2>
+      <p>This store sells only legitimate digital products.</p>
+    </section>
+
+    <section id="contact" class="info-section">
+      <h2>Contact</h2>
+      <p>Email: support@mydigitalstore.com</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> MyDigitalStore.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
